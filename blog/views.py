@@ -3,3 +3,7 @@ from django.http import HttpResponse
 
 def index(req) -> HttpResponse:
     return HttpResponse("blog")
+
+def example(req) -> HttpResponse:
+    return HttpResponse("example")
+
