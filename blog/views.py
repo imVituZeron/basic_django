@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 def index(req):
+    # it fetch into the app's template folder 
     return render(
         req,
         'blog/index.html'
