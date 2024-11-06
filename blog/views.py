@@ -1,9 +1,14 @@
-from django.http import HttpResponse
-#from django.shortcuts import render
+from django.shortcuts import render
 
-def index(req) -> HttpResponse:
-    return HttpResponse("blog")
+def index(req):
+    return render(
+        req,
+        'blog/index.html'
+    )
 
-def example(req) -> HttpResponse:
-    return HttpResponse("example")
+def example(req):
+    return render(
+        req,
+        'blog/example.html'
+    )
 
